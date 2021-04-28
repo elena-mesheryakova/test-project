@@ -6,63 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hidrofilm</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,600&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/jquery.fancybox.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div id="top" class="wrapper">
+      <a href="#top" class="top">
+        <img src="./images/arrow-up.svg" alt="" />
+      </a>
       <header class="header">
         <div class="container">
           <div class="header__inner">
             <a class="header__logo" href="#">
               <img
                 class="header__logo-img"
-                src="./images/logo.svg"
+                src="./images/logo.png"
                 alt="logo"
               />
-              <span>Hidrofilm</span>
             </a>
 
             <nav class="header__menu">
               <ul class="header__menu-list">
                 <li class="header__menu-link">
-                  <a href="">Преимущества</a>
+                  <a href="#advantages">Преимущества</a>
                 </li>
                 <li class="header__menu-link">
-                  <a href="">Видео</a>
+                  <a href="#video">Видео</a>
                 </li>
                 <li class="header__menu-link">
-                  <a href="">Характеристики</a>
+                  <a href="#description">Характеристики</a>
                 </li>
                 <li class="header__menu-link">
-                  <a href="">Поддержка</a>
+                  <a href="#infotostart">Поддержка</a>
                 </li>
                 <li class="header__menu-link">
-                  <a href="">Пленка</a>
+                  <a href="#product">Пленка</a>
                 </li>
                 <li class="header__menu-link">
-                  <a href="#">Контакты</a>
+                  <a href="#footer">Контакты</a>
                 </li>
               </ul>
             </nav>
             <div class="header__menu-burger">
               <span></span>
             </div>
-            <a href="#" class="header__button">заказать сейчас</a>
+            <a href="#callback" class="header__button">заказать сейчас</a>
           </div>
 
           <div class="header__box">
             <div class="header__info">
               <div class="header__info-top">
-                <h1 class="header__info-title">
+                <h2 class="header__info-title">
                   БИЗНЕС С ОКУПАЕМОСТЬЮ <span>ОТ 10 дней</span> и доходом от
                   60000р* в месяц
-                </h1>
+                </h2>
                 <p class="header__info-comment">
                   * При условии поклейки Пленки по 1000₽ от 60 шт в месяц.
                 </p>
@@ -110,13 +110,13 @@
       <section class="plotter">
         <div
           class="plotter-wrapper"
-          style="background: url('./images/plotter-img.png') no-repeat right"
+          style="background: url('./images/plotter-img.webp') no-repeat right"
         >
           <div class="container">
-            <h1 class="plotter__title">
+            <h2 class="plotter__title">
               Плоттер для резки гидрогелевой пленки
               <span class="hydro">Hydro</span><span>film</span>
-            </h1>
+            </h2>
             <p class="plotter__text">
               Избавляет от неликвидных запасов защитных стекол и чехлов.
               Незаменимое оборудование на рынке цифровой техники.
@@ -171,53 +171,68 @@
       </section>
       <section class="trands">
         <div class="container">
-          <h1 class="trands__title">Тренды рынка и спрос</h1>
+          <h2 class="trands__title">Тренды рынка и спрос</h2>
           <div class="trands__inner">
             <div class="trands__item">
               <div class="trands__item-img">
-                <img src="./images/trand1.png" alt="" />
+                <img src="./images/trand1.webp" alt="" />
               </div>
               <div class="trands__item-text">
                 Продажи смартфонов в России в 2020 году достигли рекордных 570
                 млрд рублей - Всего было продано около 31 млн девайсов
               </div>
-              <a class="trands__item-link" href="#">Читать источник</a>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://tass.ru/ekonomika/10375261#:~:text=%D0%9F%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8%20%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B2%202020%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B3%D0%BB%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D0%BD%D1%8B%D1%85%20570%20%D0%BC%D0%BB%D1%80%D0%B4%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9,-%D0%92%D1%81%D0%B5%D0%B3%D0%BE%20%D0%B1%D1%8B%D0%BB%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BD%D0%BE&text=%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%2C%2029%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F.%20%2F%D0%A2%D0%90%D0%A1%D0%A1,%D1%8D%D1%82%D0%BE%D0%BC%20%D0%A2%D0%90%D0%A1%D0%A1%20%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B8%D0%BB%D0%B8%20%D0%B2%20%22%D0%9C"
+                >Читать источник</a
+              >
             </div>
             <div class="trands__item">
               <div class="trands__item-img">
                 <img src="./images/trand2.png" alt="" />
               </div>
               <div class="trands__item-text">
-                Продажи смартфонов в России в 2020 году достигли рекордных 570
-                млрд рублей - Всего было продано около 31 млн девайсов
+                Сегмент складных смартфонов будет активно расти в 2021 году.
+                Несмотря на то, что сегмент складных смартфонов относят ...
               </div>
-              <a class="trands__item-link" href="#">Читать источник</a>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://mobile-review.com/news/segment-skladnyx-smartfonov-budet-aktivno-rasti-v-2021-godu"
+                >Читать источник</a
+              >
             </div>
             <div class="trands__item">
               <div class="trands__item-img">
                 <img src="./images/trand3.png" alt="" />
               </div>
               <div class="trands__item-text">
-                Продажи смартфонов в России в 2020 году достигли рекордных 570
-                млрд рублей - Всего было продано около 31 млн девайсов
+                Рынок смартфонов в 2021 году вернётся к росту, но Huawei не
+                попадёт в шестёрку лидеров. Пандемия COVID-19 ...
               </div>
-              <a class="trands__item-link" href="#">Читать источник</a>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://3dnews.ru/1029343/rinok-smartfonov-v-2021-godu-vernyotsya-k-rostu-no-huawei-ne-popadyot-v-shestyorku-liderov"
+                >Читать источник</a
+              >
             </div>
           </div>
         </div>
       </section>
-      <section class="video">
+      <section id="video" class="video">
         <div class="container">
-          <h1 class="video__title">
+          <h2 class="video__title">
             Как работает плотер <span class="hydro">Hydro</span
             ><span>film</span>
-          </h1>
+          </h2>
           <div class="video__text">Видео презентация работы устройства</div>
           <div class="video__popup">
             <a
               class="video__popup-play"
               data-fancybox
-              href="./images/video-test.mp4"
+              href="./images/video.mp4"
             >
               <img
                 class="video__popup-imgbtn"
@@ -228,7 +243,7 @@
           </div>
         </div>
       </section>
-      <section class="description">
+      <section id="description" class="description">
         <div
           class="description-wrapper"
           style="
@@ -237,10 +252,10 @@
           "
         >
           <div class="container">
-            <h1 class="description__title">
+            <h2 class="description__title">
               Ключевые характеристики плоттера <span class="hydro">Hydro</span
               ><span>film</span>
-            </h1>
+            </h2>
             <div class="description__text">
               У нашего плоттера самая большая на рынке, постоянно пополняемая
               база шаблонов, более 8000. Шаблоны для новых моделей гаджетов
@@ -264,8 +279,8 @@
               <div class="description__item">
                 <div class="description__item-wrap">
                   <img
-                    class="description__item-icon"
-                    src="./images/icon-description/1.svg"
+                    class="description__item-icon-img"
+                    src="./images/icon-description/2.svg"
                     alt=""
                   />
                 </div>
@@ -276,8 +291,8 @@
               <div class="description__item">
                 <div class="description__item-wrap">
                   <img
-                    class="description__item-icon"
-                    src="./images/icon-description/1.svg"
+                    class="description__item-icon-img"
+                    src="./images/icon-description/3.svg"
                     alt=""
                   />
                 </div>
@@ -367,17 +382,17 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section id="advantages" class="advantages">
         <div class="container">
-          <h1 class="advantages__title">
+          <h2 class="advantages__title">
             Технологические преимущества и комплектация
-          </h1>
+          </h2>
           <div class="advantages__inner">
             <div class="advantages__item">
               <div class="advantages-wrap">
                 <img
                   class="advantages__img"
-                  src="./images/icon-advantages/1.png"
+                  src="./images/icon-advantages/1.webp"
                   alt=""
                 />
               </div>
@@ -386,14 +401,14 @@
                 корпус
               </div>
               <div class="line line-1">
-                <img src="./images/icon-advantages/Line1.svg" alt="" />
+                <img src="./images/icon-advantages/line1.svg" alt="" />
               </div>
             </div>
             <div class="advantages__item">
               <div class="advantages-wrap">
                 <img
                   class="advantages__img"
-                  src="./images/icon-advantages/2.png"
+                  src="./images/icon-advantages/2.webp"
                   alt=""
                 />
               </div>
@@ -403,14 +418,14 @@
                 шкалу регулировки высоты ножа
               </div>
               <div class="line line-2">
-                <img src="./images/icon-advantages/Line2.svg" alt="" />
+                <img src="./images/icon-advantages/line2.svg" alt="" />
               </div>
             </div>
             <div class="advantages__item">
               <div class="advantages-wrap">
                 <img
                   class="advantages__img"
-                  src="./images/icon-advantages/3.png"
+                  src="./images/icon-advantages/3.webp"
                   alt=""
                 />
               </div>
@@ -419,44 +434,51 @@
                 благодаря встроенному инфракрасному сенсору
               </div>
               <div class="line line-3">
-                <img src="./images/icon-advantages/Line3.svg" alt="" />
+                <img src="./images/icon-advantages/line3.svg" alt="" />
               </div>
             </div>
           </div>
           <div class="advantages__bg">
-            <img
-              class="advantages__bg-left"
-              src="./images/icon-advantages/img-left.png"
-              alt=""
-            />
-            <img
-              class="advantages__bg-right"
-              src="./images/icon-advantages/img-right.png"
-              alt=""
-            />
+            <div class="advantages__bg-left">
+              <img src="./images/icon-advantages/img-left.webp" alt="" />
+            </div>
+            <div class="advantages__bg-right">
+              <img src="./images/icon-advantages/img-right.webp" alt="" />
+            </div>
           </div>
         </div>
       </section>
-      <section class="callback">
+      <section id="callback" class="callback">
         <div class="container">
           <div class="callback__wrap">
-            <h1 class="callback__title">Консультация бесплатно</h1>
+            <h2 class="callback__title">Консультация бесплатно</h2>
             <div class="callback__text">
               Оставьте Ваши данные и наш менеджер свяжется с Вами в течении часа
             </div>
             <form class="callback__form">
               <input type="text" placeholder="Ваше имя" />
               <input type="text" placeholder="Номер телефона" />
-              <button type="submit">Отправить</button>
+
+              <a class="callback__btn" href="#openModal">Отправить</a>
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <h1 class="modal__title">Спасибо. Заявка Принята.</h1>
+                  <p class="modal__text">
+                    В Ближайшее Время С Вами Свяжется Наш Менеджер.
+                  </p>
+                  <a class="close" href="#close">X</a>
+                </div>
+              </div>
             </form>
           </div>
         </div>
       </section>
-      <section class="infotostart">
+      <section id="infotostart" class="infotostart">
         <div class="container">
-          <h1 class="infotostart__title">
+          <h2 class="infotostart__title">
             Поможем установить и наладить все процессы
-          </h1>
+          </h2>
           <div class="infotostart__text">Для старта потребуется</div>
           <div class="infotostart__inner">
             <div class="infotostart__item">
@@ -482,7 +504,7 @@
                 />
               </div>
               <div class="infotostart__item-text">
-                Плоттер для резки пленок Hydrofilm
+                Прозрачная и цветная гидрогелевая пленка
               </div>
             </div>
             <div class="infotostart__item">
@@ -495,7 +517,7 @@
                 />
               </div>
               <div class="infotostart__item-text">
-                Плоттер для резки пленок Hydrofilm
+                Установить и настроить плоттер
               </div>
             </div>
             <div class="infotostart__item">
@@ -507,9 +529,7 @@
                   alt=""
                 />
               </div>
-              <div class="infotostart__item-text">
-                Плоттер для резки пленок Hydrofilm
-              </div>
+              <div class="infotostart__item-text">Обучить сотрудников</div>
             </div>
             <div class="infotostart__item">
               <div class="infotostart__item-wrap">
@@ -521,7 +541,7 @@
                 />
               </div>
               <div class="infotostart__item-text">
-                Плоттер для резки пленок Hydrofilm
+                Распечатать и разместить рекламные материалы
               </div>
             </div>
           </div>
@@ -531,14 +551,14 @@
         <div
           class="about-us__wrapper"
           style="
-            background: url(./images/block-bg/block7-bg.png) no-repeat right;
+            background: url(./images/block-bg/block7-bg.webp) no-repeat right;
           "
         >
           <div class="container">
-            <h1 class="about-us__title">
+            <h2 class="about-us__title">
               <span class="hydro">Hydro</span><span>film</span> - это
               профессиональная команда и радушный сервис
-            </h1>
+            </h2>
             <div class="about-us__inner">
               <div class="about-us__item">
                 <div class="about-us__item-wrap">
@@ -604,15 +624,15 @@
           </div>
         </div>
       </section>
-      <section class="product">
+      <section id="product" class="product">
         <div class="container">
-          <h1 class="product__title">Гидрогелевая пленка</h1>
+          <h2 class="product__title">Гидрогелевая пленка</h2>
           <div class="product__text">
             Технология и надежность защиты устройства
           </div>
           <div class="product__wrapper">
             <div class="product__item">
-              <img src="./images/product.png" alt="" />
+              <img src="./images/product.webp" alt="" />
             </div>
             <div class="product__info">
               <div class="product__info-title">5 слоев защиты</div>
@@ -629,12 +649,12 @@
       </section>
       <section class="assortment">
         <div class="container">
-          <h1 class="assortment__title">Ассортимент по назначению пленок</h1>
+          <h2 class="assortment__title">Ассортимент по назначению пленок</h2>
           <div class="assortment__inner">
             <div class="assortment__wrap">
               <div class="assortment__item">
                 <div class="assortment__item-img">
-                  <img src="./images/assortment/1.png" alt="" />
+                  <img src="./images/assortment/1.webp" alt="" />
                 </div>
                 <div class="assortment__item-title">Матовая</div>
                 <div class="assortment__item-text">
@@ -644,7 +664,7 @@
               </div>
               <div class="assortment__item">
                 <div class="assortment__item-img">
-                  <img src="./images/assortment/2.png" alt="" />
+                  <img src="./images/assortment/2.webp" alt="" />
                 </div>
                 <div class="assortment__item-title">Hd-Глянцевая</div>
                 <div class="assortment__item-text">
@@ -654,7 +674,7 @@
               </div>
               <div class="assortment__item">
                 <div class="assortment__item-img">
-                  <img src="./images/assortment/3.png" alt="" />
+                  <img src="./images/assortment/3.webp" alt="" />
                 </div>
                 <div class="assortment__item-title">Antispy</div>
                 <div class="assortment__item-text">
@@ -664,7 +684,7 @@
               </div>
               <div class="assortment__item">
                 <div class="assortment__item-img">
-                  <img src="./images/assortment/4.png" alt="" />
+                  <img src="./images/assortment/4.webp" alt="" />
                 </div>
                 <div class="assortment__item-title">Blueray-Антибликовая</div>
                 <div class="assortment__item-text">
@@ -678,15 +698,15 @@
       </section>
       <section class="assortment-all">
         <div class="container">
-          <h1 class="assortment-all__title">
+          <h2 class="assortment-all__title">
             Ассотримент пленок по индивидуальному дизайну
-          </h1>
+          </h2>
           <div class="assortment-all__inner">
             <div class="assortment-all__wrap">
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/1.png"
+                  src="./images/assortment-all/1.webp"
                   alt=""
                 />
               </div>
@@ -697,7 +717,7 @@
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/2.png"
+                  src="./images/assortment-all/2.webp"
                   alt=""
                 />
               </div>
@@ -707,7 +727,7 @@
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/3.png"
+                  src="./images/assortment-all/3.webp"
                   alt=""
                 />
               </div>
@@ -717,7 +737,7 @@
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/4.png"
+                  src="./images/assortment-all/4.webp"
                   alt=""
                 />
               </div>
@@ -727,7 +747,7 @@
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/5.png"
+                  src="./images/assortment-all/5.webp"
                   alt=""
                 />
               </div>
@@ -737,7 +757,7 @@
               <div class="assortment-all__item">
                 <img
                   class="assortment-all__item-img"
-                  src="./images/assortment-all/6.png"
+                  src="./images/assortment-all/6.webp"
                   alt=""
                 />
               </div>
@@ -749,19 +769,30 @@
       <section class="callback callback--bottom">
         <div class="container">
           <div class="callback__wrap">
-            <h1 class="callback__title">Консультация бесплатно</h1>
+            <h2 class="callback__title">Консультация бесплатно</h2>
             <div class="callback__text">
               Оставьте Ваши данные и наш менеджер свяжется с Вами в течении часа
             </div>
             <form class="callback__form">
               <input type="text" placeholder="Ваше имя" />
               <input type="text" placeholder="Номер телефона" />
-              <button type="submit">Отправить</button>
+
+              <a class="callback__btn" href="#openModal">Отправить</a>
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <h1 class="modal__title">Спасибо. Заявка Принята.</h1>
+                  <p class="modal__text">
+                    В Ближайшее Время С Вами Свяжется Наш Менеджер.
+                  </p>
+                  <a class="close" href="#close">X</a>
+                </div>
+              </div>
             </form>
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="container">
           <div class="footer__title">Контактная информация и реквизиты</div>
           <div class="footer__adress">
@@ -778,6 +809,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/main.js
     "></script>
