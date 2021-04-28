@@ -1,3 +1,5 @@
-<svg width="183" height="200" viewBox="0 0 183 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="1.93663" y1="198.587" x2="181.587" y2="2.06336" stroke="#7C00B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 6"/>
+<svg width="201" height="218" viewBox="0 0 201 218" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.4" cx="16" cy="202" r="16" fill="white"/>
+<line x1="19.9366" y1="197.587" x2="199.587" y2="1.06336" stroke="#7C00B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 6"/>
+<circle cx="16.5" cy="202.5" r="3.5" fill="#7C00B7"/>
 </svg>
