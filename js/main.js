@@ -7,5 +7,19 @@ $(function(){
 		});
 	});
 
+	$(document).ready(function(){
+
+		$('.slider').slick({
+			dots:  true,
+			arrows: false,
+			adaptiveHeight: true,
+			autoplay: true,
+  			autoplaySpeed: 2000,
+		});
+		
+		
+	});
+
+	
 	
 });

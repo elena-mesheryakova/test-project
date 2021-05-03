@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hidrofilm</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-
+    <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+
     <link rel="stylesheet" href="./css/jquery.fancybox.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -89,29 +90,37 @@
                 </div>
               </div>
             </div>
+            <div class="form__wrap">
+              <form class="header__form">
+                <div class="header__form-title">Консультация бесплатно</div>
+                <div class="header__form-text">
+                  Оставьте данные и наш менеджер свяжется с Вами в течении часа
+                </div>
+                <input type="text" placeholder="Ваше имя " />
+                <input type="text" placeholder="Номер телефона " />
+                <a class="header__form-btn" href="#openModal"
+                  >Отправить запрос</a
+                >
 
-            <form class="header__form">
-              <div class="header__form-title">Консультация бесплатно</div>
-              <div class="header__form-text">
-                Оставьте данные и наш менеджер свяжется с Вами в течении часа
-              </div>
-              <input type="text" placeholder="Ваше имя " />
-              <input type="text" placeholder="Номер телефона " />
-              <button type="submit">Отправить запрос</button>
-              <div class="header__form-copy">
-                Подписываясь, вы принимаете наши условия и политика
-                конфиденциальности
-              </div>
-            </form>
+                <div class="header__form-copy">
+                  Подписываясь, вы принимаете наши условия и политику
+                  конфиденциальности
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </header>
-      <!-- HEADER-------------- -->
-      <section class="plotter">
-        <div
-          class="plotter-wrapper"
-          style="background: url('./images/plotter-img.webp') no-repeat right"
-        >
+      <!-- /HEADER-------------- -->
+
+      <section
+        class="plotter"
+        style="
+          background: url('./images/block-bg/block1.png') no-repeat bottom
+            center;
+        "
+      >
+        <div class="plotter-wrapper">
           <div class="container">
             <h2 class="plotter__title">
               Плоттер для резки гидрогелевой пленки
@@ -169,6 +178,70 @@
           </div>
         </div>
       </section>
+      <!-- /PLOTTER-------------- -->
+
+      <!-- PLOTTER-SLIDER-------------- -->
+      <section class="slider-block">
+        <div class="container">
+          <h2 class="plotter__title">
+            Плоттер для резки гидрогелевой пленки
+            <span class="hydro">Hydro</span><span>film</span>
+          </h2>
+          <p class="plotter__text">
+            Избавляет от неликвидных запасов защитных стекол и чехлов.
+            Незаменимое оборудование на рынке цифровой техники.
+          </p>
+          <div class="plotter__slider-img">
+            <img src="./images/plotter-img.webp" alt="" />
+          </div>
+          <div class="slider">
+            <div class="plotter__item">
+              <div class="plotter__item-title">
+                <p>Быстрый запуск и окупаемость</p>
+                <img src="./images/plotter-icon.svg" alt="" />
+              </div>
+              <div class="plotter__item-text">
+                На оборудование точки и запуск продаж достаточно 1 дня. Срок
+                окупаемости вложений от 2 недель.
+              </div>
+            </div>
+            <div class="plotter__item">
+              <div class="plotter__item-title">
+                <p>Высокая эффективность</p>
+                <img src="./images/plotter-icon2.svg" alt="" />
+              </div>
+              <div class="plotter__item-text">
+                Вы сможете удовлетворить 100% запросов клиентов без заморозки
+                оборотных средств, изготавливая нужную плёнку под заказ клиента.
+              </div>
+            </div>
+            <div class="plotter__item">
+              <div class="plotter__item-title">
+                <p>Минимальные вложения</p>
+                <img src="./images/plotter-icon3.svg" alt="" />
+              </div>
+              <div class="plotter__item-text">
+                Низкая стоимость плоттера при большом запасе прочности. Быстрая
+                оборачиваемость плёнок при минимальной цене.
+              </div>
+            </div>
+            <div class="plotter__item">
+              <div class="plotter__item-title">
+                <p>Подходит под множество локаций</p>
+                <img src="./images/plotter-icon4.svg" alt="" />
+              </div>
+              <div class="plotter__item-text">
+                Магазинов электроники, сервисных центров, магазинов аксессуаров,
+                точек островной торговли как дополнительная услуга или основной
+                вид деятельности.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /PLOTTER-SLIDER-------------- -->
+
+      <!-- TRANDS-------------- -->
       <section class="trands">
         <div class="container">
           <h2 class="trands__title">Тренды рынка и спрос</h2>
@@ -221,6 +294,64 @@
           </div>
         </div>
       </section>
+      <!-- /TRANDS-------------- -->
+
+      <!-- TRANDS-SLIDER-------------- -->
+      <section class="slider-trands">
+        <div class="container">
+          <h2 class="trands__title">Тренды рынка и спрос</h2>
+          <div class="slider">
+            <div class="trands__item">
+              <div class="trands__item-img">
+                <img src="./images/trand1.webp" alt="" />
+              </div>
+              <div class="trands__item-text">
+                Продажи смартфонов в России в 2020 году достигли рекордных 570
+                млрд рублей - Всего было продано около 31 млн девайсов
+              </div>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://tass.ru/ekonomika/10375261#:~:text=%D0%9F%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8%20%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%20%D0%B2%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B2%202020%20%D0%B3%D0%BE%D0%B4%D1%83%20%D0%B4%D0%BE%D1%81%D1%82%D0%B8%D0%B3%D0%BB%D0%B8%20%D1%80%D0%B5%D0%BA%D0%BE%D1%80%D0%B4%D0%BD%D1%8B%D1%85%20570%20%D0%BC%D0%BB%D1%80%D0%B4%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9,-%D0%92%D1%81%D0%B5%D0%B3%D0%BE%20%D0%B1%D1%8B%D0%BB%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BD%D0%BE&text=%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%2C%2029%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F.%20%2F%D0%A2%D0%90%D0%A1%D0%A1,%D1%8D%D1%82%D0%BE%D0%BC%20%D0%A2%D0%90%D0%A1%D0%A1%20%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B8%D0%BB%D0%B8%20%D0%B2%20%22%D0%9C"
+                >Читать источник</a
+              >
+            </div>
+            <div class="trands__item">
+              <div class="trands__item-img">
+                <img src="./images/trand2.png" alt="" />
+              </div>
+              <div class="trands__item-text">
+                Сегмент складных смартфонов будет активно расти в 2021 году.
+                Несмотря на то, что сегмент складных смартфонов относят ...
+              </div>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://mobile-review.com/news/segment-skladnyx-smartfonov-budet-aktivno-rasti-v-2021-godu"
+                >Читать источник</a
+              >
+            </div>
+            <div class="trands__item">
+              <div class="trands__item-img">
+                <img src="./images/trand3.png" alt="" />
+              </div>
+              <div class="trands__item-text">
+                Рынок смартфонов в 2021 году вернётся к росту, но Huawei не
+                попадёт в шестёрку лидеров. Пандемия COVID-19 ...
+              </div>
+              <a
+                class="trands__item-link"
+                target="_blank"
+                href="https://3dnews.ru/1029343/rinok-smartfonov-v-2021-godu-vernyotsya-k-rostu-no-huawei-ne-popadyot-v-shestyorku-liderov"
+                >Читать источник</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /TRANDS-SLIDER-------------- -->
+
+      <!-- VIDEO-------------- -->
       <section id="video" class="video">
         <div class="container">
           <h2 class="video__title">
@@ -243,14 +374,17 @@
           </div>
         </div>
       </section>
-      <section id="description" class="description">
-        <div
-          class="description-wrapper"
-          style="
-            background: url('./images/block-bg/description-bg.png') no-repeat
-              bottom right;
-          "
-        >
+      <!-- /VIDEO-------------- -->
+
+      <!-- DESCRIPTION-------------- -->
+      <section
+        id="description"
+        class="description"
+        style="
+          background: url('./images/block-bg/block4.png') no-repeat top center;
+        "
+      >
+        <div class="description-wrapper">
           <div class="container">
             <h2 class="description__title">
               Ключевые характеристики плоттера <span class="hydro">Hydro</span
@@ -382,6 +516,154 @@
           </div>
         </div>
       </section>
+      <!-- /DESCRIPTION-------------- -->
+
+      <!-- DESCRIPTION-SLIDER-------------- -->
+      <section
+        id="description"
+        class="description-slider"
+        style="
+          background: url('./images/block-bg/block4.png') no-repeat bottom right;
+        "
+      >
+        <div class="description-wrapper">
+          <div class="container">
+            <h2 class="description__title">
+              Ключевые характеристики плоттера <span class="hydro">Hydro</span
+              ><span>film</span>
+            </h2>
+            <div class="description__text">
+              У нашего плоттера самая большая на рынке, постоянно пополняемая
+              база шаблонов, более 8000. Шаблоны для новых моделей гаджетов
+              добавляются в базу еще до официального старта продаж девайса.
+              Шаблоны на редкие устаревшие модели добавляются по запросу клиента
+              в течение суток.
+            </div>
+            <div class="slider">
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/1.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Широкий спектр настроек и применения
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon-img"
+                    src="./images/icon-description/2.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  8000+ шаблонов (для различных устройств)
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon-img"
+                    src="./images/icon-description/3.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Облачное хранилище обновляется по Wi-Fi
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/4.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">Точность резки 0,1 мм</div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/5.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Скорость резки 300-600 мм/с
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/6.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Компактность 550 * 180 * 175 мм
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/7.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Простой интерфейс на русском языке
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/8.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">Цветной тачскрин</div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/9.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">
+                  Операционная система Android
+                </div>
+              </div>
+              <div class="description__item">
+                <div class="description__item-wrap">
+                  <img
+                    class="description__item-icon"
+                    src="./images/icon-description/10.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="description__item-info">Ресурс ножа 500 резов</div>
+              </div>
+            </div>
+            <div class="description__slider-img">
+              <img src="./images/block-bg/description-bg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ DESCRIPTION-SLIDER-------------- -->
+
+      <!-- ADVANTAGES-------------- -->
       <section id="advantages" class="advantages">
         <div class="container">
           <h2 class="advantages__title">
@@ -418,7 +700,7 @@
                 шкалу регулировки высоты ножа
               </div>
               <div class="line line-2">
-                <img src="/images/icon-advantages/line2.svg" alt="" />
+                <img src="./images/icon-advantages/line2.svg" alt="" />
               </div>
             </div>
             <div class="advantages__item">
@@ -434,7 +716,64 @@
                 благодаря встроенному инфракрасному сенсору
               </div>
               <div class="line line-3">
-                <img src="/images/icon-advantages/line3.svg" alt="" />
+                <img src="./images/icon-advantages/line3.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="advantages__bg">
+            <div class="advantages__bg-left">
+              <img src="./images/icon-advantages/img-left.webp" alt="" />
+            </div>
+            <div class="advantages__bg-right">
+              <img src="./images/icon-advantages/img-right.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="advantages" class="advantages-slider">
+        <div class="container">
+          <h2 class="advantages__title">
+            Технологические преимущества и комплектация
+          </h2>
+          <div class="slider">
+            <div class="advantages__item">
+              <div class="advantages-wrap">
+                <img
+                  class="advantages__img"
+                  src="./images/icon-advantages/1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="advantages__text">
+                Безопасный abs пластик, полированный алюминий, жесткий надежный
+                корпус
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages-wrap">
+                <img
+                  class="advantages__img"
+                  src="./images/icon-advantages/2.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="advantages__text">
+                Ножевая головка выполнена из прочного металла, имеет точную
+                шкалу регулировки высоты ножа
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages-wrap">
+                <img
+                  class="advantages__img"
+                  src="./images/icon-advantages/3.webp"
+                  alt=""
+                />
+              </div>
+              <div class="advantages__text">
+                Установка пленки осуществляется в автоматическом режиме
+                благодаря встроенному инфракрасному сенсору
               </div>
             </div>
           </div>
@@ -474,6 +813,9 @@
           </div>
         </div>
       </section>
+      <!-- /ADVANTAGES-------------- -->
+
+      <!-- INFOTOSTART-------------- -->
       <section id="infotostart" class="infotostart">
         <div class="container">
           <h2 class="infotostart__title">
@@ -547,13 +889,92 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
-        <div
-          class="about-us__wrapper"
-          style="
-            background: url(./images/block-bg/block7-bg.webp) no-repeat right;
-          "
-        >
+      <!-- /INFOTOSTART-------------- -->
+
+      <!-- INFOTOSTART-SLIDER-------------- -->
+      <section id="infotostart" class="infotostart-slider">
+        <div class="container">
+          <h2 class="infotostart__title">
+            Поможем установить и наладить все процессы
+          </h2>
+          <div class="infotostart__text">Для старта потребуется</div>
+          <div class="slider">
+            <div class="infotostart__item">
+              <div class="infotostart__item-wrap">
+                <span>1</span>
+                <img
+                  class="infotostart__item-img"
+                  src="./images/icon-infotostart/1.svg"
+                  alt=""
+                />
+              </div>
+              <div class="infotostart__item-text">
+                Плоттер для резки пленок Hydrofilm
+              </div>
+            </div>
+            <div class="infotostart__item">
+              <div class="infotostart__item-wrap">
+                <span>2</span>
+                <img
+                  class="infotostart__item-img"
+                  src="./images/icon-infotostart/2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="infotostart__item-text">
+                Прозрачная и цветная гидрогелевая пленка
+              </div>
+            </div>
+            <div class="infotostart__item">
+              <div class="infotostart__item-wrap">
+                <span>3</span>
+                <img
+                  class="infotostart__item-img"
+                  src="./images/icon-infotostart/3.svg"
+                  alt=""
+                />
+              </div>
+              <div class="infotostart__item-text">
+                Установить и настроить плоттер
+              </div>
+            </div>
+            <div class="infotostart__item">
+              <div class="infotostart__item-wrap">
+                <span>4</span>
+                <img
+                  class="infotostart__item-img"
+                  src="./images/icon-infotostart/4.svg"
+                  alt=""
+                />
+              </div>
+              <div class="infotostart__item-text">Обучить сотрудников</div>
+            </div>
+            <div class="infotostart__item">
+              <div class="infotostart__item-wrap">
+                <span>5</span>
+                <img
+                  class="infotostart__item-img"
+                  src="./images/icon-infotostart/5.svg"
+                  alt=""
+                />
+              </div>
+              <div class="infotostart__item-text">
+                Распечатать и разместить рекламные материалы
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /INFOTOSTART-SLIDER-------------- -->
+
+      <!-- ABOUT-US-------------- -->
+      <section
+        class="about-us"
+        style="
+          background: url(./images/block-bg/block7.png) no-repeat top center;
+        "
+      >
+        <div class="about-us__wrapper">
           <div class="container">
             <h2 class="about-us__title">
               <span class="hydro">Hydro</span><span>film</span> - это
@@ -624,6 +1045,89 @@
           </div>
         </div>
       </section>
+      <!-- /ABOUT-US-------------- -->
+
+      <!-- ABOUT-US-SLIDER-------------- -->
+      <section
+        class="about-us-slider"
+        style="
+          background: url(./images/block-bg/block7.png) no-repeat top center;
+        "
+      >
+        <div class="about-us__wrapper">
+          <div class="container">
+            <h2 class="about-us__title">
+              <span class="hydro">Hydro</span><span>film</span> - это
+              профессиональная команда и радушный сервис
+            </h2>
+            <div class="slider">
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">Менторство</div>
+                  <div class="about-us__item-text">
+                    Мы сопровождаем вас на всех этапах запуска и ведения
+                    бизнеса.
+                  </div>
+                </div>
+              </div>
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">
+                    Маркетинг и продвижение
+                  </div>
+                  <div class="about-us__item-text">
+                    Окажем помощь в стимулировании продаж. Предоставим рекламные
+                    материалы, скрипты продаж и советы от действующих клиентов.
+                  </div>
+                </div>
+              </div>
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">Поддержка 24 \ 7</div>
+                  <div class="about-us__item-text">
+                    Круглосуточная информационная и техническая поддержка.
+                  </div>
+                </div>
+              </div>
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">Экономия на материалах</div>
+                  <div class="about-us__item-text">
+                    Предоставляем пленки премиум качества по минимальной цене.
+                  </div>
+                </div>
+              </div>
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">Pre-sale</div>
+                  <div class="about-us__item-text">
+                    Мы уже выбрали для вас оптимальный по соотношению цены,
+                    качества и функциональности плоттер. Мы сформируем
+                    оптимальный стартовый пакет оборудования и расходных
+                    материалов, исходя из особенностей и географического
+                    расположения вашего бизнеса. Подберем наиболее удобный и
+                    выгодный для вас способ оплаты и доставки.
+                  </div>
+                </div>
+              </div>
+              <div class="about-us__item">
+                <div class="about-us__item-wrap">
+                  <div class="about-us__item-title">Обучение</div>
+                  <div class="about-us__item-text">
+                    Проведем обучение по установке и наладке плоттера по факту
+                    получения оборудования. Предоставим обучающие видеоматериалы
+                    по технологии поклейки пленки и 5 бесплатных пленок для
+                    обучения сотрудников.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /ABOUT-US-SLIDER-------------- -->
+
+      <!-- PRODUCT-------------- -->
       <section id="product" class="product">
         <div class="container">
           <h2 class="product__title">Гидрогелевая пленка</h2>
@@ -647,6 +1151,9 @@
           </div>
         </div>
       </section>
+      <!-- /PRODUCT-------------- -->
+
+      <!-- ASSORTMENT-------------- -->
       <section class="assortment">
         <div class="container">
           <h2 class="assortment__title">Ассортимент по назначению пленок</h2>
@@ -696,6 +1203,61 @@
           </div>
         </div>
       </section>
+      <!-- /ASSORTMENT-------------- -->
+
+      <!-- ASSORTMENT-SLIDER-------------- -->
+      <section class="assortment-slider">
+        <div class="container">
+          <h2 class="assortment__title">Ассортимент по назначению пленок</h2>
+          <div class="assortment__inner">
+            <div class="slider">
+              <div class="assortment__item">
+                <div class="assortment__item-img">
+                  <img src="./images/assortment/1.webp" alt="" />
+                </div>
+                <div class="assortment__item-title">Матовая</div>
+                <div class="assortment__item-text">
+                  Матовое покрытие имеет слой лака с эффектом
+                  самовосстановления. Не искажает цветопередачу.
+                </div>
+              </div>
+              <div class="assortment__item">
+                <div class="assortment__item-img">
+                  <img src="./images/assortment/2.webp" alt="" />
+                </div>
+                <div class="assortment__item-title">Hd-Глянцевая</div>
+                <div class="assortment__item-text">
+                  Кристально прозрачная. Имеет слой лака с эффектом
+                  самовосстановления. Отличное скольжение.
+                </div>
+              </div>
+              <div class="assortment__item">
+                <div class="assortment__item-img">
+                  <img src="./images/assortment/3.webp" alt="" />
+                </div>
+                <div class="assortment__item-title">Antispy</div>
+                <div class="assortment__item-text">
+                  Экран смартфона виден только под прямым углом, ни один
+                  посторонний не сможет увидеть ничего, кроме черного экрана
+                </div>
+              </div>
+              <div class="assortment__item">
+                <div class="assortment__item-img">
+                  <img src="./images/assortment/4.webp" alt="" />
+                </div>
+                <div class="assortment__item-title">Blueray-Антибликовая</div>
+                <div class="assortment__item-text">
+                  Кристально прозрачная с приятным фиолетовым отливом. Не
+                  бликует на солнце.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ASSORTMENT-SLIDER-------------- -->
+
+      <!-- ASSORTMENT-ALL-------------- -->
       <section class="assortment-all">
         <div class="container">
           <h2 class="assortment-all__title">
@@ -766,6 +1328,79 @@
           </div>
         </div>
       </section>
+      <section class="assortment-all-slider">
+        <div class="container">
+          <h2 class="assortment-all__title">
+            Ассотримент пленок по индивидуальному дизайну
+          </h2>
+          <div class="slider">
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/1.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Известные Бренды</div>
+            </div>
+
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/2.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Фильмы и супер герои</div>
+            </div>
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/3.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Абстрактные узоры</div>
+            </div>
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/4.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Натуральная текстура</div>
+            </div>
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/5.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Рисованные</div>
+            </div>
+            <div class="assortment-all__wrap">
+              <div class="assortment-all__item">
+                <img
+                  class="assortment-all__item-img"
+                  src="./images/assortment-all/6.webp"
+                  alt=""
+                />
+              </div>
+              <div class="assortment-all__item-info">Однотонные</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /ASSORTMENT-ALL-------------- -->
+
+      <!-- CALLBACK-------------- -->
       <section class="callback callback--bottom">
         <div class="container">
           <div class="callback__wrap">
@@ -792,6 +1427,9 @@
           </div>
         </div>
       </section>
+      <!-- /CALLBACK-------------- -->
+
+      <!-- FOOTER-------------- -->
       <footer id="footer" class="footer">
         <div class="container">
           <div class="footer__title">Контактная информация и реквизиты</div>
@@ -803,14 +1441,16 @@
           </div>
         </div>
       </footer>
+      <!-- FOOTER-------------- -->
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
+    <script src="./js/slick.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
+
     <script src="./js/main.js
     "></script>
   </body>
